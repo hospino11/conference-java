@@ -14,6 +14,10 @@ public class Application {
     public static void main(String[] args) {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
         SpeakerService speakerService = applicationContext.getBean("speakerService", SpeakerService.class);
+        logger.log(Level.INFO, "First getBean call: {0}", speakerService);
         logger.log(Level.INFO, speakerService.findAll().get(0).getFirstName());
+        SpeakerService speakerService2 = applicationContext.getBean("speakerService", SpeakerService.class);
+        // It's the same instance
+        logger.log(Level.INFO, "Second getBean call: {0}", speakerService2);
     }
 }
