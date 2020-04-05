@@ -15,7 +15,7 @@ Spring Fundamentals - Conference Speaker Spring Java
     - Setter
     - Constructor
 - @Service
-- Repository
+- @Repository
 - Bean Lifecycle
     - @PostConstruct
     - FactoryBean
