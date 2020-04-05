@@ -21,3 +21,4 @@ Spring Fundamentals - Conference Speaker Spring Java
     - FactoryBean
     - SpEL (Spring Expression Language)
         - @Value
+    - @Profile (VM options: -Dspring.profiles.active=profile_name)

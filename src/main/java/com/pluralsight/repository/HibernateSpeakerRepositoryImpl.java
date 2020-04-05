@@ -3,6 +3,7 @@ package com.pluralsight.repository;
 import com.pluralsight.model.Speaker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 import java.util.Arrays;
@@ -12,6 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @Repository("speakerRepository")
+@Profile("dev")
 public class HibernateSpeakerRepositoryImpl implements SpeakerRepository {
 
     private static final Logger logger = Logger.getLogger(HibernateSpeakerRepositoryImpl.class.getName());

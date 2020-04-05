@@ -3,6 +3,7 @@ package com.pluralsight.service;
 import com.pluralsight.model.Speaker;
 import com.pluralsight.repository.SpeakerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -12,6 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 @Service("speakerService")
+@Profile("dev")
 public class SpeakerServiceImpl implements SpeakerService {
 
     private final Logger logger = Logger.getLogger(this.getClass().getName());
