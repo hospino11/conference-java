@@ -22,7 +22,14 @@ public class AppConfig {
         return speakerServiceImpl;
     }
 
+    @Bean(name = "speakerRepository")
     public SpeakerRepository getSpeakerRepository() {
         return new HibernateSpeakerRepositoryImpl();
+    }
+
+    @Bean(name = "speakerServicePrototype")
+    @Scope(value = BeanDefinition.SCOPE_PROTOTYPE)
+    public SpeakerService getPrototypeSpeakerService() {
+        return new SpeakerServiceImpl(getSpeakerRepository());
     }
 }

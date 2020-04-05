@@ -9,3 +9,4 @@ Spring Fundamentals - Conference Speaker Spring Java
 - Constructor injection
 - Scopes
     - Singleton
+    - Prototype
