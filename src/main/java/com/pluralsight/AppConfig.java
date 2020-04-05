@@ -16,9 +16,11 @@ public class AppConfig {
     @Scope(value = BeanDefinition.SCOPE_SINGLETON)
     public SpeakerService getSpeakerService() {
         // constructor injection
-        SpeakerServiceImpl speakerServiceImpl = new SpeakerServiceImpl(getSpeakerRepository());
+        //SpeakerServiceImpl speakerServiceImpl = new SpeakerServiceImpl(getSpeakerRepository());
         // Setter injection
         //speakerServiceImpl.setSpeakerRepository(getSpeakerRepository());
+        // Autowired
+        SpeakerServiceImpl speakerServiceImpl = new SpeakerServiceImpl();
         return speakerServiceImpl;
     }
 

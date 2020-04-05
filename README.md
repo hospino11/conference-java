@@ -10,3 +10,5 @@ Spring Fundamentals - Conference Speaker Spring Java
 - Scopes
     - Singleton
     - Prototype
+- @Autowired
+    - Setter
