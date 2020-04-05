@@ -19,3 +19,5 @@ Spring Fundamentals - Conference Speaker Spring Java
 - Bean Lifecycle
     - @PostConstruct
     - FactoryBean
+    - SpEL (Spring Expression Language)
+        - @Value
