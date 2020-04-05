@@ -10,5 +10,9 @@ Spring Fundamentals - Conference Speaker Spring Java
 - Scopes
     - Singleton
     - Prototype
+- @ComponentScan
 - @Autowired
     - Setter
+    - Constructor
+- @Service
+- Repository
