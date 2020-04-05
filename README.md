@@ -16,3 +16,5 @@ Spring Fundamentals - Conference Speaker Spring Java
     - Constructor
 - @Service
 - Repository
+- Bean Lifecycle
+    - @PostConstruct
