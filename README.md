@@ -18,3 +18,4 @@ Spring Fundamentals - Conference Speaker Spring Java
 - Repository
 - Bean Lifecycle
     - @PostConstruct
+    - FactoryBean
